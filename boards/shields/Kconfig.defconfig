@@ -1,0 +1,7 @@
+if SHIELD_orthfu65
+
+# Name must be less than 16 characters long!
+config ZMK_Orthfu65
+    default "orthfu65"
+
+endif
