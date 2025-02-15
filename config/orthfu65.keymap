@@ -29,7 +29,7 @@
 
 
             bindings = <
- &kp LG(ESC)      &kp 1 &kp 2  &kp 3        &kp 4 &kp 5         &kp 6         &kp 7 &kp 8         &kp 9             &kp 0                &kp backspace
+                     &kp LG(ESC)      &kp 1 &kp 2  &kp 3        &kp 4 &kp 5         &kp 6         &kp 7 &kp 8         &kp 9             &kp 0                &kp backspace
                      &kp q            &kp w &kp e  &kp r        &kp t &kp EQUAL     &kp BACKSLASH &kp y &kp u         &kp i             &kp o          &kp p           &kp DELETE
     &kp LG(TAB)      &kp a            &kp s &kp d  &kp f        &kp g &kp MINUS     &kp SQT       &kp h &kp j         &kp k             &kp l                &kp ENTER
     &kp LG(LSHIFT)   &kp z            &kp x &kp c  &kp v        &kp b &kp SEMICOLON &kp SLASH     &kp n &kp m         &kp ,             &kp .          &kp right_arrow &kp RIGHT_SHIFT
