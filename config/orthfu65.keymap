@@ -8,13 +8,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define Layer_0 
+#define Layer_1
+#define Layer_2
+
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // layer 0
+        Layer_0 {
             display-name = "orthfu65";
-// ---------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //      .---------------------------------------------------------------------------------------------------------------------------------------------------------.
 //      |                  |     ESC     |   1     |   2    |   3   |   4   |   5     |   6     |   7   |   8     |     9       |     0    |      backspace       |
 //      |                  +-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
@@ -29,12 +33,35 @@
 
 
             bindings = <
-                     &kp LG(ESC)      &kp 1 &kp 2  &kp 3        &kp 4 &kp 5         &kp 6         &kp 7 &kp 8         &kp 9             &kp 0                &kp backspace
-                     &kp q            &kp w &kp e  &kp r        &kp t &kp EQUAL     &kp BACKSLASH &kp y &kp u         &kp i             &kp o          &kp p           &kp DELETE
-    &kp LG(TAB)      &kp a            &kp s &kp d  &kp f        &kp g &kp MINUS     &kp SQT       &kp h &kp j         &kp k             &kp l                &kp ENTER
-    &kp LG(LSHIFT)   &kp z            &kp x &kp c  &kp v        &kp b &kp SEMICOLON &kp SLASH     &kp n &kp m         &kp ,             &kp .          &kp right_arrow &kp RIGHT_SHIFT
-    &kp LG(CAPSLOCK) &kp LEFT_CONTROL &kp LEFT_WIN &kp left_atl &kp Space           &kp Space           &kp right_alt &kp right_CONTROL &kp left_arrow &kp down_arrow  &kp right_arrow
+                              &kp LG(ESC)      &kp 1 &kp 2  &kp 3        &kp 4 &kp 5         &kp 6         &kp 7 &kp 8         &kp 9             &kp 0                &kp backspace
+                              &kp q            &kp w &kp e  &kp r        &kp t &kp EQUAL     &kp BACKSLASH &kp y &kp u         &kp i             &kp o          &kp p           &kp DELETE
+             &kp LG(TAB)      &kp a            &kp s &kp d  &kp f        &kp g &kp MINUS     &kp SQT       &kp h &kp j         &kp k             &kp l                &kp ENTER
+             &kp LG(LSHIFT)   &kp z            &kp x &kp c  &kp v        &kp b &kp SEMICOLON &kp SLASH     &kp n &kp m         &kp ,             &kp .          &kp right_arrow &kp RIGHT_SHIFT
+             &kp LG(CAPSLOCK) &kp LEFT_CONTROL &kp LEFT_WIN &kp left_atl &kp Space           &kp Space           &kp right_alt &kp right_CONTROL &kp left_arrow &kp down_arrow  &kp right_arrow
             >;
         };
-    };
+        Layer_1 {
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//      .---------------------------------------------------------------------------------------------------------------------------------------------------------.
+//      |                  |          |        |       |      |      |        |       |         |       |         |             |          |                      |
+//      |                  +-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |                  |             |         |        |       |       |         |         |       |         |             |          |          |           |
+//      |-------+----------+-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |       |          |             |         |        |       |       |         |         |       |         |             |          |                      |
+//      |-------+----------+-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |       |          |             |         |        |       |       |         |         |       |         |             |          |          |           |
+//      |-------+----------+-------------+---------+--------+-------+-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |       |          |             |         |        |       |                 |                 |         |             |          |          |           |
+//      |-------+----------+-------------+---------+--------+-------+-------+---------+---------+-------+---------+-------------+----------+----------+-----------| 
+
+
+            bindings = <
+                                       &kp        &kp    &kp  &kp           &kp  &kp      &kp       &kp     &kp       &kp           &kp  &kp 
+                                       &kp               &kp  &kp  &kp      &kp  &kp      &kp  &kp  &kp     &kp       &kp           &kp  &kp 
+             &kp       &kp             &kp  &kp   &kp         &kp  &kp      &kp           &kp  &kp          &kp       &kp           &kp 
+             &kp       &kp             &kp  &kp   &kp         &kp  &kp      &kp           &kp  &kp          &kp       &kp           &kp  &kp 
+             &kp       &kp             &kp  &kp   &kp              &kp                    &kp  &kp  &kp     &kp   &kp 
+            >;
+        };
+};
 };
