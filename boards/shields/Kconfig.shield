@@ -1,2 +1,2 @@
-config SHIELD_Orthfu65
+config SHIELD_ORTHFU655
     def_bool $(shields_list_contains,Orthfu65)
