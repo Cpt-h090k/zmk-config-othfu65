@@ -12,10 +12,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layer { // layer 0
+            display-name = "orthfu65";
+// ---------------------------------------------------------------------------------
+//  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
+//  |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |
+//  |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |
+//  |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |
+
+
             bindings = <
-                &kp X
-                &kp Z
+                &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0  
+                &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p 
+                &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp ; &kp '
+                &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp , &kp . &kp / 
             >;
         };
     };
