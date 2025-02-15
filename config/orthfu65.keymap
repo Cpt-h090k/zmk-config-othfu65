@@ -15,17 +15,25 @@
         default_layer { // layer 0
             display-name = "orthfu65";
 // ---------------------------------------------------------------------------------
-//  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
-//  |  q  |  w  |  e  |  r  |  t  |  y  |  u  |  i  |  o  |  p  |
-//  |  a  |  s  |  d  |  f  |  g  |  h  |  j  |  k  |  l  |  ;  |  '  |
-//  |  z  |  x  |  c  |  v  |  b  |  n  |  m  |  ,  |  .  |  /  |
+//      .---------------------------------------------------------------------------------------------------------------------------------------------------------.
+//      |                  |     ESC     |   1     |   2    |   3   |   4   |   5     |   6     |   7   |   8     |     9       |     0    |      backspace       |
+//      |                  +-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |                  |      q      |    w    |   e    |   r   |   t   | EQUAL   |BACKSLASH|   y   |   u     |      i      |     o    |     p    |   delete  |
+//      |-------+----------+-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |       |   TAB    |      a      |    s    |   d    |   f   |   g   | MINUS   |  SQT    |   h   |   j     |      k      |     l    |         enter        |
+//      |-------+----------+-------------+---------+--------+-------|-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |       |left_SHIFT|      z      |    x    |   c    |   v   |   b   |SEMICOLON|  SLASH  |   n   |   m     |      ,      |     .    | up_arrow |RIGHT_SHIFT|
+//      |-------+----------+-------------+---------+--------+-------+-------+---------+---------+-------+---------+-------------+----------+----------+-----------|
+//      |       | CAPSLOCK |LEFT_CONTROL |LEFT_WIN |left_atl|       |     Space       |       Space     |right_alt|right_CONTROL|left_arrow|down_arrow|right_arrow|
+//      |-------+----------+-------------+---------+--------+-------+-------+---------+---------+-------+---------+-------------+----------+----------+-----------| 
 
 
             bindings = <
-                &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6 &kp 7 &kp 8 &kp 9 &kp 0  
-                &kp q &kp w &kp e &kp r &kp t &kp y &kp u &kp i &kp o &kp p 
-                &kp a &kp s &kp d &kp f &kp g &kp h &kp j &kp k &kp l &kp ; &kp '
-                &kp z &kp x &kp c &kp v &kp b &kp n &kp m &kp , &kp . &kp / 
+ &kp LG(ESC)      &kp 1 &kp 2  &kp 3        &kp 4 &kp 5         &kp 6         &kp 7 &kp 8         &kp 9             &kp 0                &kp backspace
+                     &kp q            &kp w &kp e  &kp r        &kp t &kp EQUAL     &kp BACKSLASH &kp y &kp u         &kp i             &kp o          &kp p           &kp DELETE
+    &kp LG(TAB)      &kp a            &kp s &kp d  &kp f        &kp g &kp MINUS     &kp SQT       &kp h &kp j         &kp k             &kp l                &kp ENTER
+    &kp LG(LSHIFT)   &kp z            &kp x &kp c  &kp v        &kp b &kp SEMICOLON &kp SLASH     &kp n &kp m         &kp ,             &kp .          &kp right_arrow &kp RIGHT_SHIFT
+    &kp LG(CAPSLOCK) &kp LEFT_CONTROL &kp LEFT_WIN &kp left_atl &kp Space           &kp Space           &kp right_alt &kp right_CONTROL &kp left_arrow &kp down_arrow  &kp right_arrow
             >;
         };
     };
